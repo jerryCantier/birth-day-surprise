@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/react-plugin' // or vue, depending on your setup
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  base: '/birth-day-surprise/',
+  plugins: [react()],
 })
